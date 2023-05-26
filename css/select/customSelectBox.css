@@ -1,0 +1,172 @@
+.customSelect { 
+width:auto;
+	position: relative;			
+	font-size: 14px;
+    font-family: 'Inter';
+    font-style: normal;
+	float: left; 
+   padding-right: 25px;
+   border:1px solid #4B525B;
+   border-radius:4px;
+     
+ background:#333A45 !important	
+}		
+.customSelect .selectedValue {
+ 
+    padding-left: 14px;
+    padding-top: 8px;
+    padding-bottom: 8px;  
+	
+  margin-bottom: 0;
+  line-height: 1.2;
+  color: #FFF; 
+  cursor: pointer;
+ background:#333A45 !important
+  
+ 
+}
+.customSelect .selectList {
+	z-index: 100;
+	position: absolute;
+	left: -999em;
+	top: -999em;
+     padding-right: 18px;
+    padding-left: 8px;	
+ 
+  margin: 2px 0 0;
+  list-style: none;
+  background-color: #17181D;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  *border-right-width: 2px;
+  *border-bottom-width: 2px;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box;
+}
+
+.customSelect.select-open .selectList {
+	left: 0 !important;
+	top: auto !important;
+}
+.customSelect .selectList dl {
+	background: #17181D;	
+}
+.customSelect .selectList dl.defaultScrollbar {
+	overflow-x: hidden;
+	overflow-y: scroll;	
+}
+.customSelect dl, .customSelect dd {
+	margin: 0;
+}
+.customSelect dd {
+	zoom: 1;
+	cursor: pointer;
+}
+.customSelect .disabled {
+	color: #999;
+	cursor: default;
+}
+.customSelect .selected {
+	color: #F7C447;
+	text-decoration: none;
+	background-color: #17181D;
+	background-image: -moz-linear-gradient(top, ##17181D, ##17181D);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(##17181D), to(##17181D));
+	background-image: -webkit-linear-gradient(top, ##17181D, ##17181D);
+	background-image: -o-linear-gradient(top, ##17181D, ##17181D);
+	background-image: linear-gradient(to bottom, ##17181D, ##17181D);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0);
+}
+.customSelect .selectList dd.hovered {
+	background: none;
+	color: #F7C447;
+}
+.customSelect .selectList dd.disabled.hovered {
+	background: none;
+	color: #999;
+}
+.customSelect dt {
+	font-weight: bold;
+	font-style: italic;
+	padding: 8px 10px 8px 6px;
+}	
+.customSelect dd {
+	padding: 8px 10px 8px 8px;
+	color:#FFF;
+} 
+.hasJS select.custom {
+	position: absolute;
+	left: -999em;
+}
+.hasJS select.custom.use-default {
+	position: absolute;
+	left: auto;
+	height: auto;
+	width: 100%;
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	opacity: 0;
+	/* prevents iOS from zooming in on field */
+	font-size: 16px;
+}
+.customSelect.focused .selectedValue {
+	box-shadow: 0 0 2px #00aedb;
+}
+.customSelect.disabled .selectedValue {
+	border: 1px solid #ccc;
+	color: #ccc;
+	cursor: default;
+}
+.customSelect .caret {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	vertical-align: top;
+	border-top: 4px solid #FFF;
+	border-right: 4px solid transparent;
+	border-left: 4px solid transparent;
+	content: "";
+}
+.customSelect .selectValueWrap .caret {
+	position: absolute;
+	top: 17px;
+	right: 13px;
+	cursor: pointer;
+}
+.customSelect .jspPane {
+	overflow-x: hidden;
+}
+.customSelect .jspVerticalBar {
+	background: none;
+	width: 6px;
+}
+.customSelect .jspHorizontalBar {
+	height: 0;
+	overflow: hidden;
+}
+.customSelect .jspTrack {
+	background: #505765;
+	right: 5px;
+	border-radius: 5px;
+}
+.customSelect .jspDrag {
+	border-radius: 5px;
+	color: #ffffff; 
+	opacity: .8;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #F7C447;
+	 
+	border-color: #F7C447 #F7C447 #000000;
+	border-color: rgba(80, 87, 101) rgba(80, 87, 101) rgba(80, 87, 101);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff444444', endColorstr='#ff222222', GradientType=0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
