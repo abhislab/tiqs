@@ -1679,6 +1679,7 @@ progress {
 }
 .table > thead {
   vertical-align: bottom;
+  border-top: 1px solid #ffffff1f;
 }
 .table-group-divider {
   border-top: 2px solid inherit;
@@ -1714,6 +1715,15 @@ progress {
   --mdb-table-accent-bg: var(--mdb-table-hover-bg);
   color: var(--mdb-table-hover-color);
 }
+
+.table th {
+	font-weight:bold;
+}
+
+.table tbody {
+	font-size:13px;
+}
+
 .table-responsive {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
@@ -13448,7 +13458,7 @@ input[type="file"].form-control.is-invalid:focus-within
   font-size: var(--mdb-table-font-size);
 }
 .table th {
-  font-weight: 500;
+  font-weight: 600;
 }
 .table tbody {
   font-weight: 400;
